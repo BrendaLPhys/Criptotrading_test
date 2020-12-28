@@ -29,14 +29,14 @@ repeat {
   
   # API keys
   
-  clave <- 'API Key'
-  llave <- 'Secret Key'
+  key <- 'API Key'
+  secret <- 'Secret Key'
   
   
   # Calling API
   
   binance_ping()
-  binance_credentials(clave, llave)
+  binance_credentials(key, secret)
   
   
   # Emailing fields
@@ -47,6 +47,8 @@ repeat {
   
   
   # Generate new data every minute
+  
+  # Note that BTCUSDT is giving the indication to use bitcoin and in USD, this key can change as needed.
   
   data <- binance_klines('BTCUSDT', interval = '1m')
 
